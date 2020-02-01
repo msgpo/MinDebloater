@@ -54,8 +54,10 @@ if [ -e "/system_root" ]; then
   sysroot="system_root";
 else
   mount -o ro /system;
-  [ -e "/system/system/build.prop" ] && sysroot="system";
 fi;
+[ -e "/system/system/build.prop" ] && sysroot="system";
+[ -e "/system_root/system/build.prop" ] && sysroot="system_root";
+[ -f "/$sysroot/system/build.prop" ] || abort "Could not find a ROM in /$sysroot";
 
 ui_print " ";
 ui_print "Mounting...";
