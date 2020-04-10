@@ -1,6 +1,10 @@
 #!/sbin/sh
-#Made by Ishan Bhargava
-#XDA @FriendlyNeighborhoodShane
+# Minimal Debloater script
+# By FriendlyNeighborhoodShane
+# Based on work by osm0sis @ xda-developers (Thanks!)
+#
+# Copyright 2018-2020 FriendlyNeighborhoodShane
+# Distributed under the terms of the GNU GPL v3
 
 modprop="id=MinDebloat
 name=Extreme Google Systemless Debloater
